@@ -21,7 +21,7 @@ bool Check(int row)
 {
 	for (int i = 0; i < row; i++)
 	{
-		if (rows[i] == rows[row] || abs(rows[row] - rows[i]) == row - i)
+		if (rows[i] == rows[row] || (abs(rows[row] - rows[i]) == row - i))
 			return false;
 	}
 	return true;
